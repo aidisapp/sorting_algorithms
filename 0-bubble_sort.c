@@ -2,7 +2,7 @@
 
 /**
  * swap - this function swaps two integers.
- * @x: this is the ointer to the first integer.
+ * @x: this is the pointer to the first integer.
  * @y: this is the pointer to the second integer.
  */
 
@@ -14,9 +14,11 @@ void swap(int *x, int *y)
 }
 
 /**
- * bubble_sort - this sorts an array of integers in ascending
+ * bubble_sort - this function sorts the input array of integers
  *
- * order using the Bubble sort algorithm
+ * using the Bubble sort algorithm, which has a time
+ *
+ * complexity of O(n^2) in the worst case.
  *
  * @arr: this is the array to sort
  *
