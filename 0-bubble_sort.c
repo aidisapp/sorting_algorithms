@@ -8,11 +8,11 @@
 
 void swap(int *x, int *y)
 {
-	int temp;
+	int tmp;
 
-	temp = *x;
+	tmp = *x;
 	*x = *y;
-	*y = temp;
+	*y = tmp;
 }
 
 /**
@@ -29,14 +29,11 @@ void swap(int *x, int *y)
 
 void bubble_sort(int *arr, size_t len)
 {
-	int temp;
-	int swapped;
 	size_t m, n;
+	bool swapped = false;
 
 	if (arr == NULL || len == 0)
 		return;
-
-	swapped = 0;
 
 	for (m = 0; m < len - 1; m++)
 	{
@@ -44,10 +41,8 @@ void bubble_sort(int *arr, size_t len)
 		{
 			if (arr[n] > arr[n + 1])
 			{
-				temp = arr[n];
-				arr[n] = arr[n + 1];
-				arr[n + 1] = temp;
-				swapped = 1;
+				swap(&arr[n], &arr[n + 1]);
+				swapped = true;
 				print_array(arr, len);
 			}
 		}
