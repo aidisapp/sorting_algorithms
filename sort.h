@@ -25,4 +25,6 @@ typedef struct listint_s
 void print_array(const int *array, size_t size);
 void print_list(const listint_t *list);
 
+/* These are the functions of the tasks themselves */
+void bubble_sort(int *arr, size_t len);
 #endif /* MY_SORT_H */
