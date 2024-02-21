@@ -2,15 +2,15 @@
 
 /**
  * swap - this function swaps two integers.
- * @a: this is the ointer to the first integer.
- * @b: this is the pointer to the second integer.
+ * @x: this is the ointer to the first integer.
+ * @y: this is the pointer to the second integer.
  */
 
 void swap(int *x, int *y)
 {
-    int temp = *x;
-    *x = *y;
-    *y = temp;
+	int temp = *x;
+	*x = *y;
+	*y = temp;
 }
 
 /**
