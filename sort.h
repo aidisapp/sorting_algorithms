@@ -29,4 +29,6 @@ void print_list(const listint_t *list);
 /* These are the functions of the tasks themselves */
 void bubble_sort(int *arr, size_t len);
 void insertion_sort_list(listint_t **list);
+void selection_sort(int *array, size_t size);
+
 #endif /* MY_SORT_H */
